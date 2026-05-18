@@ -60,6 +60,9 @@ public class Main {
         Arrays.stream(numbers)
                 .filter(i -> i % 2 == 0)
                 .forEach(System.out::println);
+        Arrays.stream(numbers)
+                .filter(i -> i % 2 == 1)
+                .forEach(System.out::println);
 
     }
 }
