@@ -10,7 +10,7 @@ public class Main {
         return new int[]{1, 2, 3, 4, 5};
     }
 
-    public static int[] filterEvenNumbers(int[] v) {
+    /*public static int[] filterEvenNumbers(int[] v) {
         int count = 0;
         for (int k : v) {
             if (k % 2 == 0) {
@@ -27,9 +27,9 @@ public class Main {
         }
 
         return even;
-    }
+    }*/
 
-    public static int[] filterOddNumbers(int[] v) {
+    /*public static int[] filterOddNumbers(int[] v) {
         int count = 0;
         for (int k : v) {
             if (k % 2 != 0) {
@@ -46,11 +46,15 @@ public class Main {
         }
 
         return odd;
-    }
+    }*/
     public static void main(String[] args){
         var n = getNumbers();
         print(Arrays.toString(n));
-        print(Arrays.toString(filterEvenNumbers(n)));
-        print(Arrays.toString(filterOddNumbers(n)));
+        /*print(Arrays.toString(filterEvenNumbers(n)));
+        print(Arrays.toString(filterOddNumbers(n)));*/
+        System.out.println(Arrays.toString(n));
+
+        int[] numbers = getNumbers();
+        Arrays.stream(numbers).forEach(System.out::println);
     }
 }
