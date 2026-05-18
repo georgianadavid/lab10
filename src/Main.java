@@ -48,13 +48,18 @@ public class Main {
         return odd;
     }*/
     public static void main(String[] args){
-        var n = getNumbers();
-        print(Arrays.toString(n));
-        /*print(Arrays.toString(filterEvenNumbers(n)));
-        print(Arrays.toString(filterOddNumbers(n)));*/
-        System.out.println(Arrays.toString(n));
-
         int[] numbers = getNumbers();
+
+
+        System.out.println(Arrays.toString(numbers));
+
+
         Arrays.stream(numbers).forEach(System.out::println);
+
+
+        Arrays.stream(numbers)
+                .filter(i -> i % 2 == 0)
+                .forEach(System.out::println);
+
     }
 }
